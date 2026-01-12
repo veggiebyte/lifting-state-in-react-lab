@@ -26,7 +26,7 @@ const App = () => {
 const [stack, setStack] = useState([]);
 
 const addToBurger = (ingredient) => {
-  setStack([...stack, ingredient]);
+  setStack([ingredient, ...stack]); 
 };
 
 const removeFromBurger = (index) => {
