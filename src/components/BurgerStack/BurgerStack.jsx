@@ -1,15 +1,25 @@
 // src/components/BurgerStack/BurgerStack.jsx
 
+import Ingredient from '../Ingredient/Ingredient';
+
 const BurgerStack = (props) => {
   return (
-    <ul>
-      {props.ingredients.map((ingredient, index) => (
-        <li key={index} style={{ backgroundColor: ingredient.color }}>
-          {ingredient.name}
-          <button onClick={() => props.removeFromBurger(index)}>X</button>
-        </li>
-      ))}
-    </ul>
+    <div className="burger-stack-container">
+      <h2>Your Burger</h2>
+      <ul>
+        {props.ingredients.map((ingredient, index) => (
+          <Ingredient
+            key={index}
+            name={ingredient.name}
+            color={ingredient.color}
+            textColor={ingredient.textColor}
+            emoji={ingredient.emoji}
+            buttonText="X"
+            handleClick={() => props.removeFromBurger(index)}
+          />
+        ))}
+      </ul>
+    </div>
   );
 };
 

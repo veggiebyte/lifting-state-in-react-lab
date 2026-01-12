@@ -6,22 +6,40 @@ import IngredientList from './components/IngredientList/IngredientList';
 import BurgerStack from './components/BurgerStack/BurgerStack';
 
 const App = () => {
-  const availableIngredients = [
-    { name: 'Kaiser Bun', color: 'saddlebrown' },
-    { name: 'Sesame Bun', color: 'sandybrown' },
-    { name: 'Gluten Free Bun', color: 'peru' },
-    { name: 'Lettuce Wrap', color: 'olivedrab' },
-    { name: 'Beef Patty', color: '#3F250B' },
-    { name: 'Soy Patty', color: '#3F250B' },
-    { name: 'Black Bean Patty', color: '#3F250B' },
-    { name: 'Chicken Patty', color: 'burlywood' },
-    { name: 'Lettuce', color: 'lawngreen' },
-    { name: 'Tomato', color: 'tomato' },
-    { name: 'Bacon', color: 'maroon' },
-    { name: 'Onion', color: 'lightyellow' },
-    { name: 'Cheddar Cheese', color: '#FDE18B' },
-    { name: 'Swiss Cheese', color: '#F1E1A8' },
-  ];
+const availableIngredients = [
+  // Breads
+  { name: 'Kaiser Bun - Top', color: '#D2B48C', emoji: '🍞', category: 'Breads', textColor: '#000000' },
+  { name: 'Kaiser Bun - Bottom', color: '#D2B48C', emoji: '🍞', category: 'Breads', textColor: '#000000' },
+  { name: 'Sesame Bun - Top', color: '#D2B48C', emoji: '🥖', category: 'Breads', textColor: '#000000' },
+  { name: 'Sesame Bun - Bottom', color: '#D2B48C', emoji: '🥖', category: 'Breads', textColor: '#000000' },
+  { name: 'Gluten-Free Bun - Top', color: '#D2B48C', emoji: '🥯', category: 'Breads', textColor: '#000000' },
+  { name: 'Gluten-Free Bun - Bottom', color: '#D2B48C', emoji: '🥯', category: 'Breads', textColor: '#000000' },
+  
+  // Patties
+  { name: 'Quinoa Patty (GF)', color: '#6B4423', emoji: '🌾', category: 'Patties' },
+  { name: 'Black Bean Patty (GF)', color: '#6B4423', emoji: '🫘', category: 'Patties' },
+  { name: 'Cauliflower Patty (GF)', color: '#6B4423', emoji: '🥦', category: 'Patties' },
+  
+  // Greens
+  { name: 'Lettuce', color: '#7CB342', emoji: '🥬', category: 'Greens' },
+  { name: 'Arugula', color: '#7CB342', emoji: '🌿', category: 'Greens' },
+  { name: 'Spinach', color: '#7CB342', emoji: '🍃', category: 'Greens' },
+  { name: 'Alfalfa Sprouts', color: '#7CB342', emoji: '🌱', category: 'Greens' },
+  
+  // Vegetables
+  { name: 'Cherry Tomato Slices', color: '#E53935', emoji: '🍅', category: 'Vegetables' },
+  { name: 'Onion', color: '#8B4789', emoji: '🧅', category: 'Vegetables' },
+  { name: 'Pickle Slices', color: '#558B2F', emoji: '🥒', category: 'Vegetables' },
+  { name: 'Cucumber Slices', color: '#558B2F', emoji: '🥒', category: 'Vegetables' },
+  { name: 'Avocado Slice', color: '#558B2F', emoji: '🥑', category: 'Vegetables' },
+  { name: 'Sautéed Mushrooms', color: '#A1887F', emoji: '🍄', category: 'Vegetables' },
+  { name: 'Portobella Mushroom Slice', color: '#A1887F', emoji: '🍄', category: 'Vegetables' },
+  
+  // Sauces & Spreads
+  { name: 'Olive Relish', color: '#C9A227', emoji: '🫒', category: 'Sauces', textColor: '#000000' },
+  { name: 'Signature Relish', color: '#C9A227', emoji: '✨', category: 'Sauces', textColor: '#000000' },
+  { name: 'Hummus', color: '#C9A227', emoji: '🧈', category: 'Sauces', textColor: '#000000' },
+];
 
 const [stack, setStack] = useState([]);
 
