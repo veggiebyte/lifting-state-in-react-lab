@@ -62,7 +62,7 @@ const App = () => {
         <h1 className="main-title">The KIND Burger-Builder</h1>
 
         <p className="instructions">
-          Welcome to the KIND Burger-Builder! Create your perfect plant-based burger by clicking the + button next to any ingredient you'd like. Your burger stacks from bottom to top, just like building the real thing. Changed your mind? Click the - button to remove ingredients before ordering. Let's get stacking!
+          Welcome to the KIND Burger-Builder! Create your perfect plant-based burger by clicking the <span className="highlight-symbol">+</span> button next to any ingredient you'd like. <strong>Please add all of your preferences between the top and bottom bun so your sandwich can be built properly.</strong> Your burger stacks from bottom to top, just like building the real thing. Changed your mind? Click the <span className="highlight-symbol">-</span> button to remove ingredients before ordering. Let's get stacking!
         </p>
 
         <section className="builder-section">

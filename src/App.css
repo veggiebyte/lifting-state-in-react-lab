@@ -53,9 +53,9 @@ main {
 .slogan {
   font-family: 'Sour Gummy', cursive;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #333;
-  margin: 5px 0 20px;
+  margin: 5px 0 35px;
 }
 
 .main-title {
@@ -63,17 +63,17 @@ main {
   text-align: center;
   font-size: 3.5em;
   color: #fe9207;
-  margin: 20px 0;
+  margin: 20px 0 10px;  
   text-transform: uppercase;
 }
 
 .instructions {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: #333;
-  margin: 20px auto 40px;
+  margin: 10px auto 40px;  /* Changed top margin from 20px to 10px */
   max-width: 900px;
-  line-height: 1.6;
+  line-height: 1.3em;
 }
 
 .builder-section {
@@ -85,17 +85,19 @@ main {
 
 .ingredient-list-container,
 .burger-stack-container {
-  background-color: #f5f5f5;
+  background-color: #FFE4CC;
   border-radius: 8px;
   padding: 20px;
 }
 
 .ingredient-list-container h2,
 .burger-stack-container h2 {
+  font-family: 'Luckiest Guy', cursive;  
   text-align: center;
-  color: #333;
-  font-size: 1.8em;
+  color: #000000;  
+  font-size: 2.2em;  
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .category-section {
@@ -103,11 +105,10 @@ main {
 }
 
 .category-section h3 {
-  color: #666;
-  font-size: 1.3em;
+  color: #000000;
+  font-size: 1.8em;
   margin-bottom: 10px;
   padding-left: 10px;
-  border-left: 4px solid #a2cd01;
 }
 
 ul {
@@ -117,18 +118,18 @@ ul {
 }
 
 li {
-  padding: 12px;
+  padding: 14px;
   margin-bottom: 8px;
   border-radius: 8px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
 }
 
 .ingredient-name {
   flex-grow: 1;
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 
 .emoji-box {
@@ -159,12 +160,48 @@ button:hover {
 
 .disclaimer {
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1.5em;
   color: #666;
   font-style: italic;
   margin-top: 30px;
   padding-top: 20px;
   border-top: 2px solid #a2cd01;
+}
+
+.category-subtitle {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #666;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.item-note {
+  font-size: 0.75em;
+  font-style: italic;
+  color: #888;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.highlight-symbol {
+  background-color: #000000;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* Disabled ingredient styling */
+.disabled-ingredient {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.disabled-ingredient button {
+  background-color: #666;
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {
@@ -178,5 +215,16 @@ button:hover {
   
   .main-title {
     font-size: 2.5em;
+  }
+  
+  .ingredient-list-container h2,
+  .burger-stack-container h2 {
+    font-size: 1.5em;  
+    line-height: 1.2;  
+    margin-bottom: 15px;
+  }
+  
+  .disclaimer {
+    font-size: 1.2em;  
   }
 }
