@@ -26,6 +26,7 @@ const IngredientList = (props) => {
                 color={ingredient.color}
                 textColor={ingredient.textColor}
                 emoji={ingredient.emoji}
+                image={ingredient.image}  
                 buttonText="+"
                 handleClick={() => props.addToBurger(ingredient)}
               />

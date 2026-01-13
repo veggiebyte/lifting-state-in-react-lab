@@ -14,6 +14,7 @@ const BurgerStack = (props) => {
             color={ingredient.color}
             textColor={ingredient.textColor}
             emoji={ingredient.emoji}
+            image={ingredient.image}  
             buttonText="X"
             handleClick={() => props.removeFromBurger(index)}
           />
